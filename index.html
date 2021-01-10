@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Ani-Fam</title>
+    <meta name="description" content="好きなアニメを好きな人同士好きなところを話し合おう">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-wrapper">
+        <div class="header-icon">Ani-Fam</div>
+        <div class="header-list">
+          <ul>
+            <li><a href="login.html" class="login">ログイン</a></li>
+            <li><a href="#" class="signup-show">新規登録</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-container">
+        <h1 class="title">Ani-Fam</h1>
+        <p>Ani-Famとは、アニメが好きな人達同士の交流を深める掲示板サービスです</p>
+      </div>
+    </header>
+    
+    <!-- modal -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div>
+          <i class="fa fa-2x fa-times" id="close-modal"></i>
+        </div>
+        <div id="signup-form">
+          <h2>Ani-Famで仲間を探す旅に</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="名前">
+            <input class="form-control" type="text" placeholder="メールアドレス">
+            <input class="form-control" type="password" placeholder="パスワード">
+            <input class="form-control" type="password" placeholder="パスワードの確認">
+            <div id="submit-btn">新規登録</div>
+            <p>
+              アカウントをお持ちですか？
+              <a href="login.html">ログイン</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- main-contents -->
+    <div class="main-contents">
+      <h2 class="sub-title"><span style="border-bottom:solid 3px lightblue ;">Ani-Famの魅力</span></h2>
+      <div class="attraction-list">
+        <div class="attraction-wrapper attraction-wrapper1">
+          <img src="img/three-friends-working-on-couch.jpg" alt="">
+          <div class="attraction1">
+            <h3 class="attraction-title">アニメの情報を交換し、お互いのアニメライフをより充実させられます</h3>
+            <p class="attraction-text">「あのアニメ好きならこのアニメもおすすめだよ」「このアニメの続編制作してるよ」「映画化するみたいだよ」などの自分が欲しかった情報を共有できます。</p>
+          </div>
+        </div>
+
+        <div class="attraction-wrapper attraction-wrapper2">
+          <div class="attraction2">
+            <h3 class="attraction-title">自分が好きなアニメを好きな仲間が見つかる</h3>
+            <p class="attraction-text">色々なアニメがある中で同じアニメが好きな人が見つかると嬉しいものです。好きなものが同じ者同士仲間になりましょう。</p>
+          </div>
+            <img src="img/four-friends.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- procedure -->
+    <div class="procedure-wrpper">
+      <h2 class="sub-title"><span style="border-bottom: solid 3px lightblue;">Ani-Famの使い方</span></h2>
+      <div class="procedure-list">
+          <p>アカウント作成</p>
+          <p>好きなアニメで検索</p>
+          <p>仲間を見つけてメッセージ</p>
+      </div>
+      <div class="signup-btn">
+        <a href="#" class="signup-show">今すぐ登録</a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <small>&copy;2020 Ani-Fam All Rights Reserved</small>
+    </footer>
+    <!-- js -->
+    <script src="main.js"></script>
+  </body>
+</html>

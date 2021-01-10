@@ -1,0 +1,284 @@
+@charset "utf-8";
+/*  共通部分
+------------------------------------ */
+*{
+  margin: 0;
+  padding: 0;
+  font-family:"Hiragino Maru Gothic ProN W4","ヒラギノ丸ゴ ProN W4" ;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+body{
+  color: black;
+}
+img{
+  max-width: 100%;
+}
+/* header
+--------------------------------------- */
+header{
+  background-image: url(img/family-using-computer.jpg);
+  background-size: cover;
+  padding-bottom: 600px;
+}
+.header-wrapper{
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+.header-icon{
+  font-size: 28px;
+  margin: 10px;
+}
+.header-list ul{
+  display: flex;
+}
+.header-list li{
+  margin: 20px ;
+  list-style: none;
+}
+.home-container{
+  background-color:rgba(221, 221,221, .7);
+  text-align: center;
+  margin: 150px 30% 50px;
+}
+.title{
+  font-size: 50px;
+}
+/* modal
+------------------------------------------------- */
+.signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form {
+  width: 100%;
+}
+
+#signup-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+#signup-form p{
+  margin-top: 15px;
+}
+#signup-form a{
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+/* maincontents
+------------------------------------------------ */
+.sub-title{
+  margin-top: 50px;
+  text-align: center;
+  font-size: 36px;
+  position: relative;
+}
+
+.attraction-list{
+  margin-top: 50px;
+}
+.attraction-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20%;
+}
+.attraction-wrapper img{
+  width: 400px;
+  height: 350px;
+}
+.attraction1{
+  margin:90px 10px;
+}
+.attraction2{
+  margin: 100px 10px;
+}
+.attraction-title{
+  font-size: 24px;
+}
+.attraction-text{
+  margin-top: 15px;
+  font-size: 15px;
+}
+/* procedure
+--------------------------------------- */
+.procedure-wrapper{
+  margin-top: 10px;
+}
+.procedure-list{
+  margin-top: 20px;
+  text-align: center;
+}
+.procedure-list p{
+  margin-top: 20px;
+  font-size: 24px;
+}
+.signup-btn{
+  text-align: center;
+  margin-top: 50px;
+}
+.signup-btn a{
+  background-color: lightblue;
+  padding: 20px 40px;
+  color: white;
+}
+/* login-modal
+---------------------------------------- */
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.login-modal {
+  position: relative;
+  top: 20%;
+  left: 28%;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 650px;
+  height: auto;
+  text-align: center;
+}
+
+#login-form {
+  width: 100%;
+}
+
+#login-form h2 {
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+#login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+#login-form p{
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+#login-form a{
+  background-color: lightblue;
+  padding: 10px;
+  border-radius: 3px;
+  color: white;
+}
+/* footer
+---------------------------------------- */
+footer{
+  margin-top: 60px;
+  text-align: center;
+}
+
+/* モバイル版
+-------------------------------------- */
+@media screen and (max-width: 600px){
+  header{
+    background-position: 50% 30%;
+  }
+  .home-container{
+    margin: 150px 5% 50px;
+  }
+  .attraction-wrapper1{
+    flex-direction: column;
+  }
+  .attraction-wrapper2{
+    flex-direction: column-reverse;
+  }
+  .attraction-wrapper{
+    margin: 0 10%;
+  }
+  .attraction-wrapper img{
+    width: 100%;
+  }
+  .modal{
+    left: 0%;
+    padding: 20px 10px 40px 10px ;
+    width: auto;
+    text-align: unset;
+  }
+  .login-modal{
+    left: 0%;
+    width: auto;
+  }
+
+}
+
+
+
+
+
+
